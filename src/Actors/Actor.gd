@@ -1,11 +1,11 @@
 extends KinematicBody2D
 class_name Actor
 
-var speed: = Vector2(300.0,1000.0)
-var gravity: = 500.0
+const FLOOR_NORMAL = Vector2.UP
+
+var speed: = Vector2(400.0,1400.0)
+var gravity: = 4000.0
 
 var velocity: = Vector2.ZERO
 
-func _physics_process(delta: float) -> void:
-	velocity.y += gravity * delta
-	velocity = move_and_slide(velocity)
+	
